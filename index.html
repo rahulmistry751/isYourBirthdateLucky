@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Is your Birthday Lucky?</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>🥳Is your Birthday Lucky?🥳</h2>
+            
+        </header>
+        <main class="main">
+            <div class="front-img"><img src="images/man-mage.png"></div>
+            <h3>What is your Birthdate?</h3>
+            <form>
+                <input type="date" id="date-input" required autofocus>
+                <div class="date-warning"></div>
+                <label for="lucky-num"><h3>Tell your Lucky Number!</h3></label>
+                <input type="number" min="1" step="1" id="lucky-num" required>
+                <div class="number-warning"></div>
+                <button type="submit" class="check-btn" id="show-img">Check</button>
+                
+            </form>
+           
+        </main>
+        <div class="result">
+    
+        </div>
+        <footer id="footer">
+            <ul>
+            <li class="links"><a href="https://github.com/rahulmistry751"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li class="links"><a href="https://www.linkedin.com/in/rahul-mistry-xl/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li class="links"><a href="https://rahul-folio.netlify.app/"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+        </ul>
+        <p><i style="vertical-align: middle;"class="fa fa-copyright" aria-hidden="true"></i>&nbsp;2021&nbsp;|&nbsp;Rahul Mistry&nbsp;|&nbsp;<a id="policyLink" style="cursor:pointer">Privacy Policy</a></p>
+    </footer>
+    </div>
+    <div id="alert"><p id="close" onclick="closePolicy()">x</p><p ><strong>Privacy Notice!</strong> We are not storing your data.</p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
